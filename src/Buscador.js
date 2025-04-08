@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import api from "../services/api";
-import validarCep from "../services/regex";
+import api from "../src/services/api";
+import validarCep from "../src/services/regex";
 import { PacmanLoader } from "react-spinners";
-import "../style.css";
+import "./style.css";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
@@ -64,14 +64,6 @@ function Buscador() {
     }
   };
 
-  const navigate = useNavigate();
-  const goToLista = () => {
-    navigate("/lista");
-  };
-  const goToForm = () => {
-    navigate("/");
-  };
-
   return (
     <div className="container">
       <div className="formulario2">
@@ -105,19 +97,9 @@ function Buscador() {
             <p>
               Cidade: {cepData.localidade} - {cepData.uf}
             </p>
-            <div className="areaButton">
-              <button className="sendButton">Enviar para banco</button>
-            </div>
           </main>
         )}
-        <div className="areaInsertButton">
-          <button className="visualizeButton" onClick={goToForm}>
-            Retornar
-          </button>
-          <button className="visualizeButton" onClick={goToLista}>
-            Verificar dados existentes
-          </button>
-        </div>
+        <div className="areaInsertButton"></div>
       </div>
     </div>
   );
