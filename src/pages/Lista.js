@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Lista = () => {
   const navigate = useNavigate();
   const returnToLista = () => {
-    navigate("/buscador");
+    navigate("/Home");
   };
 
   return (
@@ -15,30 +15,28 @@ const Lista = () => {
           <thead>
             <tr>
               <th>Nome</th>
-              <th>Idade</th>
-              <th>Cidade</th>
-              <th>Cidade</th>
-              <th>Cidade</th>
-              <th>Cidade</th>
-              <th>Cidade</th>
+              <th>Número</th>
+              <th>CEP</th>
+              <th>Número</th>
+              <th>E-mail</th>
+              <th>Senha</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Maria</td>
-              <td>28</td>
-              <td>São Paulo</td>
-              <td>São Paulo</td>
-              <td>São Paulo</td>
-              <td>São Paulo</td>
-              <td>São Paulo</td>
+              <td>Pedro Soeiro</td>
+              <td>22</td>
+              <td>60416000</td>
+              <td>(85)981300575</td>
+              <td>joaopedro@grupoavp.com.br</td>
+              <td>123456</td>
             </tr>
           </tbody>
         </table>
+        <button className="visualizeButton" onClick={returnToLista}>
+          Retornar
+        </button>
       </div>
-      <button className="visualizeButton" onClick={returnToLista}>
-        Retornar
-      </button>
     </div>
   );
 };

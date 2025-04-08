@@ -9,7 +9,7 @@ const Input = ({
   required = false,
 }) => {
   return (
-    <div>
+    <div class="input-group">
       <label>{label}:</label>
       <input
         type={type}

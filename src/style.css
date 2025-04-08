@@ -1,19 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nova+Flat&family=Silkscreen:wght@400;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
 
 .container {
-  background-color: #292930;
-  height: 100vh;
-  width: 100vw;
+  background-color: #1b1a1a;
+  height: 130vh;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .formulario {
+  background-color: #939293;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 1px #000;
+  height: 90%;
+  width: 90%;
+}
+
+.containerInfo {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.division1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.division2 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.division3 {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.division4 {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.formulario2 {
   padding: 70px;
   margin: 70px;
-  background-color: #3c3c3c;
+  background-color: #939293;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -22,16 +72,12 @@
   box-shadow: 1px 1px 1px #000;
 }
 
-.formulario2 {
-  padding: 70px;
-  margin: 70px;
-  background-color: #3c3c3c;
-  border-radius: 15px;
+.org2 {
+  height: 100%;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  box-shadow: 1px 1px 1px #000;
 }
 
 .buscador {
@@ -152,7 +198,7 @@ main p {
 }
 
 .container2 {
-  background-color: #292930;
+  background-color: #1b1a1a;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -164,11 +210,12 @@ main p {
 .tabela {
   padding: 70px;
   margin: 70px;
-  background-color: #3c3c3c;
+  background-color: #939293;
   border-radius: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   box-shadow: 1px 1px 1px #000;
   height: 80%;
   width: 80%;
@@ -190,4 +237,21 @@ thead {
 td {
   background-color: #292930;
   color: aliceblue;
+}
+
+h1 {
+  font-family: "Boldonse";
+  font-size: 100px;
+  color: #1b1a1a;
+}
+
+p {
+  color: #000;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #1b1a1a;
+  width: 92%;
+  margin: 20px auto;
 }
