@@ -5,7 +5,6 @@ import validarCep from "../src/services/regex";
 import { PacmanLoader } from "react-spinners";
 import "./style.css";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
 
 function Buscador() {
   const [input, setInput] = useState("");
@@ -42,6 +41,7 @@ function Buscador() {
             color: "#00ffff",
           });
           setCepData(null);
+          setInput("");
         }
       } catch (error) {
         Swal.fire({
@@ -51,6 +51,7 @@ function Buscador() {
           color: "#00ffff",
         });
         setCepData(null);
+        setInput("");
       } finally {
         setLoading(false);
       }
